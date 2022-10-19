@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import self from '../img/self.jpg';
+import self from '../img/mimi.jpg';
 import mock1 from '../img/mock1.png';
 import mock2 from '../img/mock2.png';
 import mock3 from '../img/mock3.png';
@@ -12,18 +12,18 @@ export const info = {
 	firstName: 'Andrew',
 	lastName: 'Kagwi',
 	initials: 'AK',
-	position: 'a Frontend Developer',
+	position: 'A Frontend Developer',
 	selfPortrait: self,
 	gradient: `-webkit-linear-gradient(135deg, ${colors})`,
 	baseColor: colors[0],
 	miniBio: [
 		{
 			emoji: '🌎',
-			text: 'based in kenya',
+			text: 'Based in Kenya',
 		},
 		{
 			emoji: '💼',
-			text: 'freelance ',
+			text: 'A Freelance ',
 		},
 		{
 			emoji: '📧',
@@ -33,17 +33,17 @@ export const info = {
 	socials: [
 		{
 			link: 'https://github.com/kagz',
-			icon: 'fa fa-github',
+			icon: 'FaGithub',
 			label: 'github',
 		},
 		{
 			link: 'https://linkedin.com/andrew-kagwi',
-			icon: 'fa fa-linkedin',
+			icon: 'FaLinkedin',
 			label: 'linkedin',
 		},
 		{
 			link: 'https://twitter.com/kagwidru',
-			icon: 'fa fa-twitter',
+			icon: 'FaTwitter',
 			label: 'twitter',
 		},
 

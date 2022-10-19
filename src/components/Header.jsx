@@ -7,8 +7,8 @@ import { Container, Image } from 'react-bootstrap';
 import getLinks from './nav-links';
 
 const Nav = styled.nav`
-transition: all 250ms ease;
-
+	transition: all 250ms ease;
+/* border: solid yellowgreen 2px; */
 `;
 const UL = styled.ul`
 	display: flex;
@@ -42,7 +42,7 @@ function Header() {
 	const [active, setActive] = useState(location.pathname === '/' ? 'home' : location.pathname.slice(1, location.pathname.length));
 	const links = getLinks();
 	return (
-		<div>
+		<>
 			<Nav>
 				<UL>
 					{links.map((link, index) => (
@@ -60,7 +60,7 @@ function Header() {
 					))}
 				</UL>
 			</Nav>
-		</div>
+		</>
 	);
 }
 

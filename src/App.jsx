@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 const RouteComponents = styled.div`
 	min-height: 70vh;
 	background-color: #030303;
-	margin-top: 4rem;
+	/* border: solid green 2px; */
 	padding-top: 0.75rem;
 `;
 const CenterComponents = styled(Container)`
