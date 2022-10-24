@@ -76,7 +76,7 @@ function Home() {
 		<MainCont>
 			<Avatar src={info.selfPortrait} />
 			<div>
-				<h1>Hi, I'm <span style={{ background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>{info.firstName}</span><span>🤚</span>
+				<h1>Hey, I'm <span style={{ background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>{info.firstName}</span><span>🤚</span>
 				</h1>
 				<h2>{info.position}.</h2>
 				<MiniBio>

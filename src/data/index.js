@@ -23,7 +23,11 @@ export const info = {
 		},
 		{
 			emoji: '💼',
-			text: 'A Freelance ',
+			text: 'A Freelancer ',
+		},
+		{
+			emoji: '🧠',
+			text: '3+ years ',
 		},
 		{
 			emoji: '📧',
@@ -48,56 +52,93 @@ export const info = {
 		},
 
 	],
-	bio: 'My name is Kagwi Andrew, a self-taught software developer who works hard to be a worldclass developer,i started off my journey with Java and i developed several desktop apps and later on shifted to web apps and currently training on mobile apps.',
+	bio: 'My name is Kagwi Andrew, a passionate frontend web developer.Specializes in the development of highly interactive web applications using React and similar tools.',
 	skills:
 	{
-		proficientWith: ['react', 'javascript', 'git', 'github', 'bootstrap', 'html5', 'css3'],
-		exposedTo: ['nodejs', 'spring-boot'],
+		proficientWith: ['react', 'javascript', 'webpack', 'git', 'github', 'bootstrap', 'html5', 'css3'],
+		exposedTo: ['nodejs', 'express'],
 	},
 	hobbies: [
 		{
 			label: 'playing football',
-			emoji: '📖',
+			emoji: '⚽',
 		},
 		{
 			label: 'editing',
-			emoji: '🎭',
+			emoji: '🎥',
 		},
 		{
-			label: 'movies',
-			emoji: '🎥',
+			label: 'music',
+			emoji: '🎶',
 		},
 
 	],
+	techStacks: [
+		{
+			label: 'Front End Technologies',
+			stacks: ['react js', 'nextjs', 'html', 'css', 'bootstrap'],
+			emoji: 'FaGlobeAfrica',
+		},
+		{
+			label: 'Back-End Technologies',
+			stacks: ['nodejs', 'express', 'firebase', 'supabase'],
+			emoji: 'FaServer',
+		},
+		{
+			label: 'databases and hosting',
+			stacks: ['mysql', 'postgres', 'firebase', 'heroku'],
+			emoji: 'FaStackOverflow',
+		},
+		{
+			label: 'workflows and teams',
+			stacks: ['git', 'trello', 'jira', 'slack'],
+			emoji: 'FaMegaport',
+		},
+		{
+			label: 'other build tools',
+			stacks: ['webpack', 'babel', 'eslint'],
+			emoji: 'FaTools',
+		},
+	],
 	portfolio: [
 		{
-			title: 'Project 1',
-			live: 'https://paytonpierce.dev', // this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-			source: 'https://github.com/paytonjewell', // this should be a link to the **repository** of the project, where the code is hosted.
+			title: 'Homecare web',
+			live: 'https://kagz.github.io/Spruce/',
+			source: 'https://github.com/kagz/spruce-ultimate',
+			description: 'Homecare web', // add desc
+			stacks: ['HTML', 'scss'],
 			image: mock1,
 		},
 		{
-			title: 'Project 2',
-			live: 'https://paytonpierce.dev',
-			source: 'https://github.com/paytonjewell',
+			title: 'React Jobs App',
+			live: 'https://github.com/kagz/github-jobs-react-app',
+			source: 'https://github.com/kagz/github-jobs-react-app',
+			description: 'Homecare web', // add desc
+			stacks: ['react', 'styled components', 'RESTful Api'],
 			image: mock2,
 		},
 		{
-			title: 'Project 3',
-			live: 'https://paytonpierce.dev',
-			source: 'https://github.com/paytonjewell',
+			title: 'Cloth online shop',
+			live: 'https://newlookmtaani.web.app/shop',
+			source: 'https://github.com/kagz/Newlooks-Mtaani-fe',
+			description: 'Homecare web', // add desc
+			stacks: ['react', 'scss', 'material design', 'RESTful Api'],
 			image: mock3,
 		},
 		{
-			title: 'Project 4',
-			live: 'https://paytonpierce.dev',
-			source: 'https://github.com/paytonjewell',
+			title: 'Decent Apps UI',
+			live: 'https://decentapps.eu/roadmap',
+			source: 'https://github.com/kagz/ponder/tree/development',
+			description: 'Homecare web', // add desc
+			stacks: ['nextjs'],
 			image: mock4,
 		},
 		{
-			title: 'Project 5',
-			live: 'https://paytonpierce.dev',
-			source: 'https://github.com/paytonjewell',
+			title: 'Ponders App',
+			live: 'https://github.com/decentrists',
+			source: 'https://github.com/decentrists/Ponder',
+			description: 'Homecare web', // add desc
+			stacks: ['react', 'bootstrap', 'cytoscape', 'RESTful Api'],
 			image: mock5,
 		},
 	],
