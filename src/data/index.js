@@ -52,7 +52,7 @@ export const info = {
 		},
 
 	],
-	bio: 'My name is Kagwi Andrew, a passionate frontend web developer.Specializes in the development of highly interactive web applications using React and similar tools.',
+	bio: 'My name is Andrew Kagwi , a passionate frontend web developer. Specializes in the development of highly interactive web applications using React and similar tools.',
 	skills:
 	{
 		proficientWith: ['react', 'javascript', 'webpack', 'git', 'github', 'bootstrap', 'html5', 'css3'],
@@ -60,7 +60,7 @@ export const info = {
 	},
 	hobbies: [
 		{
-			label: 'playing football',
+			label: 'football',
 			emoji: '⚽',
 		},
 		{
@@ -75,28 +75,123 @@ export const info = {
 	],
 	techStacks: [
 		{
-			label: 'Front End Technologies',
-			stacks: ['react js', 'nextjs', 'html', 'css', 'bootstrap'],
+			label: 'Frontend ',
+			stacks: [
+				{
+					icon: 'https://img.icons8.com/color/48/000000/bootstrap.png',
+					name: 'bootstrap',
+				},
+				{
+					icon: 'https://img.icons8.com/plasticine/100/000000/react.png',
+					name: 'react js',
+				},
+				{
+					icon: 'https://img.icons8.com/external-tal-revivo-green-tal-revivo/36/000000/external-nuxt-js-a-free-and-open-source-web-application-framework-logo-green-tal-revivo.png',
+					name: 'nextjs',
+				},
+				{
+					icon: 'https://img.icons8.com/color/48/000000/html-5--v1.png',
+					name: 'html',
+				},
+				{
+					icon: 'https://img.icons8.com/color/48/000000/css3.png',
+					name: 'css',
+				},
+
+			],
 			emoji: 'FaGlobeAfrica',
 		},
 		{
-			label: 'Back-End Technologies',
-			stacks: ['nodejs', 'express', 'firebase', 'supabase'],
+			label: 'Backend ',
+			stacks: [
+				{
+					icon: 'https://img.icons8.com/fluency/48/000000/node-js.png',
+					name: 'nodejs',
+				},
+				{
+					icon: 'https://img.icons8.com/fluency/48/000000/express-js.png',
+					name: 'express',
+				},
+				{
+					icon: 'https://img.icons8.com/color/48/000000/google-firebase-console.png',
+					name: 'firebase ',
+				},
+				// {
+				// 	icon: '',
+				// 	name: 'supabase',
+				// },
+
+			],
 			emoji: 'FaServer',
 		},
 		{
-			label: 'databases and hosting',
-			stacks: ['mysql', 'postgres', 'firebase', 'heroku'],
+			label: 'databases',
+			stacks: [
+				{
+					icon: 'https://img.icons8.com/external-those-icons-flat-those-icons/24/000000/external-MySQL-programming-and-development-those-icons-flat-those-icons.png',
+					name: 'mysql',
+				},
+				{
+					icon: 'https://img.icons8.com/color/48/000000/postgreesql.png',
+					name: 'postgres',
+				},
+				{
+					icon: 'https://img.icons8.com/color/48/000000/google-firebase-console.png',
+					name: 'firebase',
+				},
+				{
+					icon: 'https://img.icons8.com/color/48/000000/mongodb.png',
+					name: 'mongodb',
+				},
+			],
 			emoji: 'FaStackOverflow',
 		},
 		{
-			label: 'workflows and teams',
-			stacks: ['git', 'trello', 'jira', 'slack'],
+			label: 'workflows',
+			stacks: [
+				{
+					icon: 'https://img.icons8.com/color/48/000000/git.png',
+					name: 'git',
+				},
+				{
+					icon: 'https://img.icons8.com/color/48/000000/trello.png',
+					name: 'trello',
+				},
+				{
+					icon: 'https://img.icons8.com/color/48/000000/jira.png',
+					name: 'jira',
+				},
+				{
+					icon: 'https://img.icons8.com/color/48/000000/slack-new.png',
+					name: 'slack,',
+				},
+			],
 			emoji: 'FaMegaport',
 		},
 		{
-			label: 'other build tools',
-			stacks: ['webpack', 'babel', 'eslint'],
+			label: ' tools',
+			stacks: [
+				{
+					icon: 'https://img.icons8.com/color/48/000000/webpack.png',
+					name: 'webpack',
+				},
+				{
+					icon: 'https://img.icons8.com/dusk/64/000000/babel.png',
+					name: 'babel',
+				},
+				{
+					icon: 'https://img.icons8.com/color/48/000000/eslint.png',
+					name: 'eslint',
+				},
+				{
+					icon: 'https://img.icons8.com/color/48/000000/npm.png',
+					name: 'npm',
+				},
+				{
+					icon: 'https://img.icons8.com/fluency/48/000000/docker.png',
+					name: 'docker',
+				},
+			],
 			emoji: 'FaTools',
 		},
 	],
@@ -114,7 +209,7 @@ export const info = {
 			live: 'https://github.com/kagz/github-jobs-react-app',
 			source: 'https://github.com/kagz/github-jobs-react-app',
 			description: 'Homecare web', // add desc
-			stacks: ['react', 'styled components', 'RESTful Api'],
+			stacks: ['react', 'styled components', 'REST Api'],
 			image: mock2,
 		},
 		{
@@ -122,7 +217,7 @@ export const info = {
 			live: 'https://newlookmtaani.web.app/shop',
 			source: 'https://github.com/kagz/Newlooks-Mtaani-fe',
 			description: 'Homecare web', // add desc
-			stacks: ['react', 'scss', 'material design', 'RESTful Api'],
+			stacks: ['react', 'scss', 'material design', 'REST Api'],
 			image: mock3,
 		},
 		{
@@ -138,7 +233,7 @@ export const info = {
 			live: 'https://github.com/decentrists',
 			source: 'https://github.com/decentrists/Ponder',
 			description: 'Homecare web', // add desc
-			stacks: ['react', 'bootstrap', 'cytoscape', 'RESTful Api'],
+			stacks: ['react', 'bootstrap', 'cytoscape', 'REST Api'],
 			image: mock5,
 		},
 	],

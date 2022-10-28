@@ -15,6 +15,7 @@ const MainCont = styled(Container)`
 	min-height: 80vh;
 	padding-right: 15px;
 	padding-left: 15px;
+	/* border: solid 2px green; */
 `;
 
 const Avatar = styled(Image)`
@@ -30,10 +31,7 @@ const Avatar = styled(Image)`
 const MiniBio = styled.ul`
 padding: 0.8rem;
 list-style: none;
-
-/* display:flex; */
 gap: 1.5rem;
-/* justify-content: center; */
 font-size: 1rem;
 
 li{
@@ -41,15 +39,15 @@ li{
     transition: color .4s;
 		font-size: 1rem;
     line-height: 1.5;
-
 		span{
 			margin-right: 1rem;
 			font-size: 1.5rem;
 		}
 }
+
 li:hover {
 	transition: all .25s ease;
-    transform: translateY(-3px);
+  transform: translateY(-3px);
 }
 `;
 const SocialInfo = styled.div`
@@ -59,19 +57,18 @@ justify-content: center;
 font-size: 2rem;
 
 a{
-	text-decoration: none;
-	color: #f8f8f8;
-  transition: color .4s;
-
+text-decoration: none;
+color: #f8f8f8;
+transition: color .4s;
 }
+
 a:hover {
-    transition: color .2s ease;
-		color: #c9c9c9;
+transition: color .2s ease;
+color: #c9c9c9;
 }
 `;
 
 function Home() {
-	// const icon = React.createElement(FontAwesome[iconString]);
 	return (
 		<MainCont>
 			<Avatar src={info.selfPortrait} />
@@ -80,7 +77,6 @@ function Home() {
 				</h1>
 				<h2>{info.position}.</h2>
 				<MiniBio>
-
 					{info.miniBio.map((bio, index) => (
 						<li key={index}>
 							<span>{bio.emoji}</span>{bio.text}
@@ -89,7 +85,6 @@ function Home() {
 				</MiniBio>
 				<SocialInfo>
 					{info.socials.map((social, index) => (
-
 						<a
 							key={index}
 							target="_blank"
@@ -99,7 +94,6 @@ function Home() {
 						>
 							{React.createElement(FontAwesome[social.icon])}
 						</a>
-
 					))}
 				</SocialInfo>
 			</div>

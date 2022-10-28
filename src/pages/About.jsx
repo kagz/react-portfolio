@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Container, Image } from 'react-bootstrap';
-import * as FontAwesome from 'react-icons/fa';
+// import * as FontAwesome from 'react-icons/fa';
 import { info } from '../data/index';
 
 const MainCont = styled(Container)`
@@ -19,8 +19,8 @@ const MainCont = styled(Container)`
 
 const TopWrapper = styled.div`
 	display: flex;
-	justify-content: space-between;
-	width: 100%;
+	justify-content: center;
+  border: solid purple 1px;
 `;
 
 const ImageWrapper = styled.div`
@@ -51,12 +51,12 @@ const InfoWrapper = styled.div`
 	h1,h2{
 		color: #eece1a;
 		margin: 0;
-    font-weight: 400;
+		font-weight: 400;
 		text-transform: capitalize;
 	}
 
 	p{
-	    font-weight: 200;
+		font-weight: 200;
 		font-size: 1rem;
 
 	}
@@ -67,35 +67,83 @@ const InfoWrapper = styled.div`
 		text-transform: capitalize;
 		gap: 1rem;
 	}
+	li{
+		color: #f8f8f8;
+		transition: color .4s;
+		font-size: 1rem;
+		line-height: 1.5;
+	span{
+		font-size: 1.5rem;
+	}
+	}
+
+	li:hover {
+		transition: all .25s ease;
+		transform: translateY(-3px);
+	}
 `;
+
 const BottomWrapper = styled.div`
 	display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
+	flex-wrap: wrap;
+	border: solid red 1px;
+	justify-content: space-between;
+	width: 80%;
+	align-self: end;
 `;
-const Card = styled.div`
-  box-shadow: 0 0 2px 0 rgb(0 0 0 / 12%), 0 2px 2px 0 rgb(0 0 0 / 24%);
-    border-radius: 8px;
- 		padding: 4px;
-    min-height: 149px;
-    background: #181819;
-    color: #e0e0e0;
-    cursor: pointer;
-    margin: 8px 8px 8px 8px;
-    flex: 1 0 150px;
-   		ul{
-			list-style: none;
-		padding: 0;
-		}
 
-		&:hover {
-	transform: scale(1.05);
-	-moz-transform: scale(1.05);
-	-webkit-transform: scale(1.05);
+const Card = styled.div`
+	border-radius: 16px;
+	box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+	transition: 0.4s;
+	padding: 14px;
+	min-height: 149px;
+	background: #0e0e0f;
+	color: #e0e0e0;
+	cursor: pointer;
+	margin: 8px 8px 8px 8px;
+	flex: 1 0 150px;
+
+	ul{
+	list-style: none;
+	padding: 0;
+	padding-top: 12px;
+	padding-bottom: 16px;
+
+	li{
+
+		display: flex;
+		justify-content: space-between;
+		text-transform: capitalize;
+		align-items: center;
+	}
+	}
+
+	&:hover {
+	transform: scale(0.9, 0.9);
 }
 
 `;
+const CardHeader = styled.div`
+	padding: 14px 16px 6px;
+	color: #eece1a;
+	text-align: left;
+	text-transform: capitalize;
+`;
+
+const TechIcons = styled(Image)`
+	margin-left: 8px;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+`;
+
+const Span = styled.span`
+	margin-left: 24px;
+	color: #e0e0e0;
+	text-align: right;
+`;
+
 function About() {
 	return (
 		<MainCont>
@@ -121,12 +169,23 @@ function About() {
 			<BottomWrapper>
 				{info.techStacks.map((hobby, index) => (
 					<Card key={index}>
-						<label>{hobby.label}</label>
-						<span>{React.createElement(FontAwesome[hobby.emoji])}</span>
+						<CardHeader>{hobby.label}</CardHeader>
+						{/* <span>{React.createElement(FontAwesome[hobby.emoji])}</span> */}
 						 <ul>
 							{
 								hobby.stacks.map((stack, index) => (
-									<li key={index}>{stack}</li>
+									<li key={index}>
+
+										<div>
+											<TechIcons src={stack.icon} />
+											<Span>
+												<small>
+													{stack.name}
+												</small>
+											</Span>
+										</div>
+
+									</li>
 								))
 							}
 						 </ul>
