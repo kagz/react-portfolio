@@ -43,7 +43,7 @@ const Avatar = styled(Image)`
 	padding: 0.75rem;
 	margin-bottom: 1rem;
 	margin-right: 2rem;
-	background: -webkit-linear-gradient(135deg, rgb(0, 255, 164), rgb(166, 104, 255));
+	background: -webkit-linear-gradient(107deg, #0e0e0f, #3e2167);
 
 	@media (min-width: 481px) and (max-width: 767px) {
 
@@ -112,7 +112,7 @@ function Home() {
 		<MainCont>
 			<Avatar src={info.selfPortrait} />
 			<div>
-				<h1>Hi, I'm <span style={{ background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>{info.firstName}</span>
+				<h1>Hi, I'm <span style={{ background: info.nameColor, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>{info.initials}</span>
 				</h1>
 				<h2>{info.position}.</h2>
 				<MiniBio>

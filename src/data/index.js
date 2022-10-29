@@ -6,16 +6,16 @@ import mock3 from '../img/mock3.png';
 import mock4 from '../img/mock4.png';
 import mock5 from '../img/mock5.png';
 
-export const colors = ['rgb(0,255,164)', 'rgb(166,104,255)'];
-
+export const colors = ['#0e0e0f', '#3e2167'];
 export const info = {
 	firstName: 'Andrew',
 	lastName: 'Kagwi',
-	initials: 'AK',
+	initials: 'Andy',
 	position: 'A Frontend Developer',
 	selfPortrait: self,
-	gradient: `-webkit-linear-gradient(135deg, ${colors})`,
+	gradient: `-webkit-linear-gradient(107deg, ${colors})`,
 	baseColor: colors[0],
+	nameColor: "yellow",
 	miniBio: [
 		{
 			emoji: '🌎',

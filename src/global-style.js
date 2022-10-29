@@ -1,15 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
-// import 'react-spring-modal/dist/index.css';
-
-// git@github.com:kagz/react-portfolio.git
-
 
 export default createGlobalStyle`
   :root {
     --color-body: #000000fc;
-    --color-label: #797979; // Unsure if named well #000000
+    --color-label: #797979;
 		--text-color: #edfff8;
-// adding dynamic styles
 		--primary-black: #030303;
 		--secondary-black: #0c0c0c;
 		--hover: rgb(39, 42, 54);
@@ -19,10 +14,6 @@ export default createGlobalStyle`
   body,
   #root {
     min-height: 100vh;
-/*
-		-webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	-webkit-overflow-scrolling: touch; */
   }
 
   body {
@@ -31,9 +22,7 @@ export default createGlobalStyle`
 		color: var(--text-color);
   }
 
-
 /* =================== scroll bar =========================*/
-
 
 /* width */
 ::-webkit-scrollbar {
@@ -60,12 +49,10 @@ export default createGlobalStyle`
 
 /* ===================  =========================*/
 .active {
-  /* text-decoration: none; */
-  /* background-color: blue; */
   font-size: 1.3rem;
-	color: red !important;
-		border-bottom: 5px solid;
-  border-image-slice: 1;
+	border-width: 3px;
+  border-style: solid;
+  border-image:linear-gradient(130deg,#eece1a,#391f5d 41.07%,#2e1b4a 76.05%);
 	label{
 		color: yellow !important;
 	}
