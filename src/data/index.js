@@ -163,7 +163,7 @@ export const info = {
 				},
 				{
 					icon: 'https://img.icons8.com/color/48/000000/slack-new.png',
-					name: 'slack,',
+					name: 'slack',
 				},
 			],
 			emoji: 'FaMegaport',

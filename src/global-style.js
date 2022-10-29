@@ -62,7 +62,7 @@ export default createGlobalStyle`
 .active {
   /* text-decoration: none; */
   /* background-color: blue; */
-  font-size: 40px;
+  font-size: 1.3rem;
 	color: red !important;
 		border-bottom: 5px solid;
   border-image-slice: 1;

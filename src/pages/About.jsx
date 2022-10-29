@@ -18,9 +18,49 @@ const MainCont = styled(Container)`
 `;
 
 const TopWrapper = styled.div`
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+/* CSS */
 	display: flex;
 	justify-content: center;
-  border: solid purple 1px;
+  /* border: solid purple 1px; */
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+/* CSS */
+flex-direction: column;
+}
+
+/*
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+/* CSS */
+flex-direction: column;
+}
+
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+/* CSS */
+flex-direction: column;
+}
+
 `;
 
 const ImageWrapper = styled.div`
@@ -39,6 +79,25 @@ const Me = styled(Image)`
 	margin-bottom: 1rem;
 	margin-right: 2rem;
 	background: -webkit-linear-gradient(135deg, rgb(0, 255, 164), rgb(166, 104, 255));
+
+	@media (min-width: 481px) and (max-width: 767px) {
+
+/* CSS */
+	margin-right: 0;
+}
+
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+/* CSS */
+	margin-right: 0;
+}
+
+
 `;
 
 const InfoWrapper = styled.div`
@@ -84,12 +143,87 @@ const InfoWrapper = styled.div`
 `;
 
 const BottomWrapper = styled.div`
-	display: flex;
-	flex-wrap: wrap;
-	border: solid red 1px;
-	justify-content: space-between;
-	width: 80%;
+
+	/* border: solid red 1px; */
 	align-self: end;
+	width: 100%;
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+/* CSS */
+max-width: 1100px;
+	margin: 0 auto;
+	/* display: flex; */
+	display: grid;
+	/* grid-template-columns: repeat(auto-fit, minmax(18em, 1fr)); */
+	grid-gap: 2em;
+grid-template-columns: repeat(3, 1fr);
+
+}
+
+/*
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+/* CSS */
+grid-template-columns: repeat(3, 1fr);
+}
+
+/*
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+/* CSS */
+grid-template-columns: repeat(2, 1fr);
+}
+
+/*
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+/* CSS */
+grid-template-columns: repeat(2, 1fr);
+}
+
+/*
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+/* CSS */
+grid-template-columns: repeat(2, 1fr);
+}
+
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+/* CSS */
+grid-template-columns: repeat(1, 1fr);
+}
+
+
+
+
 `;
 
 const Card = styled.div`
@@ -103,7 +237,7 @@ const Card = styled.div`
 	cursor: pointer;
 	margin: 8px 8px 8px 8px;
 	flex: 1 0 150px;
-
+	/* width: 100%; */
 	ul{
 	list-style: none;
 	padding: 0;

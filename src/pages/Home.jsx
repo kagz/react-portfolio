@@ -6,6 +6,7 @@ import { info } from '../data/index';
 // import me from '../img/mimi.jpg';
 
 const MainCont = styled(Container)`
+/* border: solid 1px red; */
   display: flex;
 	justify-content: center;
 	align-items: center;
@@ -15,7 +16,24 @@ const MainCont = styled(Container)`
 	min-height: 80vh;
 	padding-right: 15px;
 	padding-left: 15px;
-	/* border: solid 2px green; */
+
+
+	@media (min-width: 481px) and (max-width: 767px) {
+
+/* CSS */
+flex-direction: column;
+}
+
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+/* CSS */
+flex-direction: column;
+}
 `;
 
 const Avatar = styled(Image)`
@@ -26,6 +44,26 @@ const Avatar = styled(Image)`
 	margin-bottom: 1rem;
 	margin-right: 2rem;
 	background: -webkit-linear-gradient(135deg, rgb(0, 255, 164), rgb(166, 104, 255));
+
+	@media (min-width: 481px) and (max-width: 767px) {
+
+/* CSS */
+	margin-right: 0;
+}
+
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+/* CSS */
+	margin-right: 0;
+}
+
+
+
 `;
 
 const MiniBio = styled.ul`
@@ -70,10 +108,11 @@ color: #c9c9c9;
 
 function Home() {
 	return (
+	// <span>🤚</span>
 		<MainCont>
 			<Avatar src={info.selfPortrait} />
 			<div>
-				<h1>Hey, I'm <span style={{ background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>{info.firstName}</span><span>🤚</span>
+				<h1>Hi, I'm <span style={{ background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>{info.firstName}</span>
 				</h1>
 				<h2>{info.position}.</h2>
 				<MiniBio>

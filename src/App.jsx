@@ -12,6 +12,7 @@ const RouteComponents = styled.div`
 	background-color: #030303;
 	/* border: solid green 2px; */
 	padding-top: 0.75rem;
+	margin-top: 5rem;
 `;
 const CenterComponents = styled(Container)`
   display: flex;

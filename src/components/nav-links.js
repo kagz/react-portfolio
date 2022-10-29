@@ -7,7 +7,7 @@ const links = [
 		active: 'home',
 	},
 	{
-		name: 'About Me',
+		name: 'About',
 		to: '/about',
 		active: 'about',
 	},
@@ -18,7 +18,7 @@ const links = [
 	// 	active: 'home',
 	// },
 	{
-		name: 'Portfolio',
+		name: 'Work',
 		to: '/portfolio',
 		active: 'portfolio',
 	},
