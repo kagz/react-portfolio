@@ -209,7 +209,7 @@ export const info = {
 			live: 'https://www.awesomescreenshot.com/image/33897445',
 			source: 'https://github.com/decentrists/Ponder',
 			description: 'Web3 based podcast discovery app , used arweave. users could search their favourite podcasts in one place and interract with like-minded people.', // add desc
-			stacks: ['react', 'bootstrap', 'cytoscape', 'styled components', 'arweave', 'pagination'],
+			stacks: ['react', 'bootstrap', 'cytoscape', 'styled components', 'arweave'],
 			image: Ponder,
 		},
 		{
@@ -217,7 +217,7 @@ export const info = {
 			live: 'https://www.awesomescreenshot.com/image/33898805',
 			source: 'https://github.com/kagz/michezo-frontend',
 			description: 'Web  app for tournaments management,users can register their teams and manage their tournaments.', // add desc
-			stacks: ['react', 'styled components', 'webpack', 'paginations'],
+			stacks: ['react', 'styled components', 'webpack'],
 			image: michezo,
 		},
 		{
@@ -233,7 +233,7 @@ export const info = {
 			live: 'https://newlookmtaani.web.app/shop',
 			source: 'https://github.com/kagz/Newlooks-Mtaani-fe',
 			description: 'Clients frontend e-commerce site for second hand clothes.', // add desc
-			stacks: ['Html', 'scss', 'material design', 'pagination'],
+			stacks: ['Html', 'scss', 'material design'],
 			image: mitumba,
 		},
 

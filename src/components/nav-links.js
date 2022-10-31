@@ -1,5 +1,3 @@
-import { info } from '../data/index'
-
 const links = [
 	{
 		name: 'Home',
@@ -11,12 +9,6 @@ const links = [
 		to: '/about',
 		active: 'about',
 	},
-	// {
-	// 	name: info.initials,
-	// 	type: 'initials',
-	// 	to: '/',
-	// 	active: 'home',
-	// },
 	{
 		name: 'Work',
 		to: '/portfolio',

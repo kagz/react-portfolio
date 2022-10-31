@@ -47,7 +47,7 @@ export default createGlobalStyle`
   background:#2b2c2b;
 }
 
-/* ===================  =========================*/
+/* =================== active links =========================*/
 .active {
   font-size: 1.3rem;
 	border-width: 3px;
