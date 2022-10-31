@@ -1,10 +1,11 @@
 /* eslint-disable max-len */
-import self from '../img/mimi.jpg';
-import mock1 from '../img/mock1.png';
-import mock2 from '../img/mock2.png';
-import mock3 from '../img/mock3.png';
-import mock4 from '../img/mock4.png';
-import mock5 from '../img/mock5.png';
+import self from '../img/dp.jpg';
+import spruce from '../img/spruce.png';
+import dapps from '../img/dapps.png';
+import michezo from '../img/michezo.png';
+import mitumba from '../img/mitumba.png';
+import me from '../img/me.png';
+import Ponder from '../img/Ponder.png';
 
 export const colors = ['#0e0e0f', '#3e2167'];
 export const info = {
@@ -15,7 +16,7 @@ export const info = {
 	selfPortrait: self,
 	gradient: `-webkit-linear-gradient(107deg, ${colors})`,
 	baseColor: colors[0],
-	nameColor: "yellow",
+	nameColor: 'yellow',
 	miniBio: [
 		{
 			emoji: '🌎',
@@ -41,7 +42,7 @@ export const info = {
 			label: 'github',
 		},
 		{
-			link: 'https://linkedin.com/andrew-kagwi',
+			link: 'https://www.linkedin.com/in/andrewkagwi/',
 			icon: 'FaLinkedin',
 			label: 'linkedin',
 		},
@@ -53,11 +54,6 @@ export const info = {
 
 	],
 	bio: 'My name is Andrew Kagwi , a passionate frontend web developer. Specializes in the development of highly interactive web applications using React and similar tools.',
-	skills:
-	{
-		proficientWith: ['react', 'javascript', 'webpack', 'git', 'github', 'bootstrap', 'html5', 'css3'],
-		exposedTo: ['nodejs', 'express'],
-	},
 	hobbies: [
 		{
 			label: 'football',
@@ -77,13 +73,14 @@ export const info = {
 		{
 			label: 'Frontend ',
 			stacks: [
-				{
-					icon: 'https://img.icons8.com/color/48/000000/bootstrap.png',
-					name: 'bootstrap',
-				},
+
 				{
 					icon: 'https://img.icons8.com/plasticine/100/000000/react.png',
 					name: 'react js',
+				},
+				{
+					icon: 'https://img.icons8.com/color/48/000000/bootstrap.png',
+					name: 'bootstrap',
 				},
 				{
 					icon: 'https://img.icons8.com/external-tal-revivo-green-tal-revivo/36/000000/external-nuxt-js-a-free-and-open-source-web-application-framework-logo-green-tal-revivo.png',
@@ -116,11 +113,6 @@ export const info = {
 					icon: 'https://img.icons8.com/color/48/000000/google-firebase-console.png',
 					name: 'firebase ',
 				},
-				// {
-				// 	icon: '',
-				// 	name: 'supabase',
-				// },
-
 			],
 			emoji: 'FaServer',
 		},
@@ -197,44 +189,53 @@ export const info = {
 	],
 	portfolio: [
 		{
-			title: 'Homecare web',
-			live: 'https://kagz.github.io/Spruce/',
-			source: 'https://github.com/kagz/spruce-ultimate',
-			description: 'Homecare web', // add desc
-			stacks: ['HTML', 'scss'],
-			image: mock1,
-		},
-		{
-			title: 'React Jobs App',
-			live: 'https://github.com/kagz/github-jobs-react-app',
-			source: 'https://github.com/kagz/github-jobs-react-app',
-			description: 'Homecare web', // add desc
-			stacks: ['react', 'styled components', 'REST Api'],
-			image: mock2,
-		},
-		{
-			title: 'Cloth online shop',
-			live: 'https://newlookmtaani.web.app/shop',
-			source: 'https://github.com/kagz/Newlooks-Mtaani-fe',
-			description: 'Homecare web', // add desc
-			stacks: ['react', 'scss', 'material design', 'REST Api'],
-			image: mock3,
+			title: 'Personal portfolio',
+			live: 'https://www.awesomescreenshot.com/image/33898992?init_open=true',
+			source: 'https://github.com/kagz/react-portfolio',
+			description: 'Personal web app to showcase my coding skills and experience.', // add desc
+			stacks: ['react', 'bootstrap', 'webpack', 'styled components'],
+			image: me,
 		},
 		{
 			title: 'Decent Apps UI',
-			live: 'https://decentapps.eu/roadmap',
+			live: 'https://www.awesomescreenshot.com/image/33898290',
 			source: 'https://github.com/kagz/ponder/tree/development',
-			description: 'Homecare web', // add desc
-			stacks: ['nextjs'],
-			image: mock4,
+			description: 'Company profile ui for a client. ', // add desc
+			stacks: ['nextjs', 'material ui', 'webpack'],
+			image: dapps,
 		},
 		{
 			title: 'Ponders App',
-			live: 'https://github.com/decentrists',
+			live: 'https://www.awesomescreenshot.com/image/33897445',
 			source: 'https://github.com/decentrists/Ponder',
-			description: 'Homecare web', // add desc
-			stacks: ['react', 'bootstrap', 'cytoscape', 'REST Api'],
-			image: mock5,
+			description: 'Web3 based podcast discovery app , used arweave. users could search their favourite podcasts in one place and interract with like-minded people.', // add desc
+			stacks: ['react', 'bootstrap', 'cytoscape', 'styled components', 'arweave', 'pagination'],
+			image: Ponder,
 		},
+		{
+			title: 'Michezo App',
+			live: 'https://www.awesomescreenshot.com/image/33898805',
+			source: 'https://github.com/kagz/michezo-frontend',
+			description: 'Web  app for tournaments management,users can register their teams and manage their tournaments.', // add desc
+			stacks: ['react', 'styled components', 'webpack', 'paginations'],
+			image: michezo,
+		},
+		{
+			title: 'Homecare web',
+			live: 'https://kagz.github.io/Spruce/',
+			source: 'https://github.com/kagz/spruce-ultimate',
+			description: 'Clients portfolio for a health care center.', // add desc
+			stacks: ['HTML', 'scss', 'js'],
+			image: spruce,
+		},
+		{
+			title: 'ecommerce shop',
+			live: 'https://newlookmtaani.web.app/shop',
+			source: 'https://github.com/kagz/Newlooks-Mtaani-fe',
+			description: 'Clients frontend e-commerce site for second hand clothes.', // add desc
+			stacks: ['Html', 'scss', 'material design', 'pagination'],
+			image: mitumba,
+		},
+
 	],
 };

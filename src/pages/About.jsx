@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Container, Image } from 'react-bootstrap';
-// import * as FontAwesome from 'react-icons/fa';
 import { info } from '../data/index';
 
 const MainCont = styled(Container)`

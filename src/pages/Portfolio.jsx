@@ -156,6 +156,7 @@ const CardBody = styled.span`
 	p{
 		margin-bottom: 0;
 		color: white;
+		/* text-transform: capitalize; */
 	}
 
 	ul{
