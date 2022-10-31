@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import self from '../img/dp.jpg';
+import self from '../img/kagz.png';
 import spruce from '../img/spruce.png';
 import dapps from '../img/dapps.png';
 import michezo from '../img/michezo.png';

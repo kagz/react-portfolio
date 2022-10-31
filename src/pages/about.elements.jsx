@@ -75,6 +75,8 @@ width: 35vh;
 padding: 0.75rem;
 margin-bottom: 1rem;
 margin-right: 2rem;
+max-width: 100%;
+box-shadow: 0 0.5rem 1rem #0006;
 background: -webkit-linear-gradient(107deg, #0e0e0f, #3e2167);
 
 @media (min-width: 481px) and (max-width: 767px) {
