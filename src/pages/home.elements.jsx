@@ -16,8 +16,8 @@ export const MainCont = styled(Container)`
 
 	@media (min-width: 481px) and (max-width: 767px) {
 
-/* CSS */
-flex-direction: column;
+	/* CSS */
+	flex-direction: column;
 }
 
 /*
@@ -26,7 +26,6 @@ flex-direction: column;
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-
 /* CSS */
 flex-direction: column;
 }
@@ -58,46 +57,45 @@ export const Avatar = styled(Image)`
 	margin-right: 0;
 }
 
-
-
 `;
 
 export const MiniBio = styled.ul`
-padding: 0.8rem;
-list-style: none;
-gap: 1.5rem;
-font-size: 1rem;
+	padding: 0.8rem;
+	list-style: none;
+	gap: 1.5rem;
+	font-size: 1rem;
 
 li{
 	color: #f8f8f8;
-    transition: color .4s;
-		font-size: 1rem;
-    line-height: 1.5;
-		span{
-			margin-right: 1rem;
-			font-size: 1.5rem;
-		}
+	transition: color .4s;
+	font-size: 1rem;
+	line-height: 1.5;
+	transition: all .25s ease;
+	span{
+		margin-right: 1rem;
+		font-size: 1.5rem;
+	}
 }
 
 li:hover {
-	transition: all .25s ease;
   transform: translateY(-3px);
 }
 `;
+
 export const SocialInfo = styled.div`
-display:flex;
-gap:1.5rem;
-justify-content: center;
-font-size: 2rem;
+	display:flex;
+	gap:1.5rem;
+	justify-content: center;
+	font-size: 2rem;
 
-a{
-text-decoration: none;
-color: #f8f8f8;
-transition: color .4s;
-}
+	a{
+		text-decoration: none;
+		color: #f8f8f8;
+		transition: color .4s;
+	}
 
-a:hover {
-transition: color .2s ease;
-color: #c9c9c9;
-}
+	a:hover {
+		transition: color .2s ease;
+		color: #c9c9c9;
+	}
 `;
